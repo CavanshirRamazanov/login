@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Login from './components/login/Login'
+import Bio from './components/bio/Bio'
+import Verification from './components/verification/Verification'
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className='App'>
+			<Login />
+			<Verification />
+			<Bio />
+		</div>
+	)
 }
 
-export default App;
+export default App
